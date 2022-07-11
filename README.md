@@ -1,3 +1,67 @@
+# My response
+
+## What I have done
+
+I first wondered if we should implement all the individual conversation pages as SSR rendered and cached pages ? I think the response is no, and it may be the trap of the exercise ?
+
+I choosed to benefit from this test by documenting and working on [https://redux-toolkit.js.org/](Redux Toolkit) I was not using yet with redux, and on [https://github.com/kirill-konshin/next-redux-wrapper](Next Redux Wrapper).
+
+First effective dev on Next too, I come from [https://www.gatsbyjs.com/](Gastby). Next is a target and I would be really pleased to learn more of it.
+
+The result is a working messaging feature based on a Redux store where it is possible to post and receive messages in conversations, and to create new conversations. The whole redux store is initialized on the browser, so that the pages does not cache conversation specific data. It persists nicely across all pages (There are pitfalls when using Next & Redux !)
+
+Many parts are quick and dirty
+
+Let's talk about it !
+
+## Spent time
+
+Approximatly one working day to build the app, but some time on TS issues :-/
+
+... and some extra time documenting and conceiving it.
+
+## Improvements / TODO
+
+So many things remains to do, but its just a 4h exercise right ?
+
+### API
+
+Implementation could be easier with a strongest API, and dedicated endpoints. I added a new one as an example to get new messages in a conversation.
+
+Please note I had to fix the middleware, it was relying on the db state at server startup...
+
+Build a microservice to expose a websocket and do realtime store update when new message, conversation or user are created. (avoid polling !)
+
+or use tools like [https://redux-toolkit.js.org/rtk-query/overview](RTK query) to abstract all the fetching layer.
+
+Will depend on the preference between big basic http traffik or ability to maintain many websocket connexions.
+
+### TS
+
+Improve the typescript typing. I am not a typescript Guru and need to build muscles on that !
+
+### Tests
+
+Fully remains todo !
+
+### css / design
+
+I choosed not to focus on it, minimal/working version.
+
+### eror handling
+
+A few cases are handled as examples, many cases remain to handle.
+
+### more
+
+A few things we could add (with API improvement costs)
+- A Bot adding automatically messages and responding, to feel less alone while developing ;-)
+- Conversation status in the menu
+- Notifications on new messages
+- Read/Sent statuses on messages
+- Persist parts of the store in the browser and hydrate nicely
+- ...
+
 # Context :
 
 At leboncoin, our users can share messages about a transaction, or ask for informations about any products.
@@ -22,7 +86,7 @@ Obvisouly, it is up to you to make something nice and pretty, you are free to de
 
 <details>
   <summary>Click to see the sketches</summary>
-  
+
 Mobile list :
 
 ![](./sketches/list-mobile.jpg)

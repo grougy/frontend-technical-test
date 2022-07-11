@@ -1,0 +1,21 @@
+.container {
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-scrollable {
+  max-height: 100vh;
+}
+
+.content {
+  padding: 4rem 2rem;
+  flex: 1 1;
+}
+
+.container-scrollable .content {
+  overflow-y: scroll;
+  margin-bottom: 50px;
+  padding: 0;
+}

@@ -1,0 +1,23 @@
+.header {
+  background-color: #eeeeee;
+  border-top: 1px solid #000;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  display: flex;
+}
+
+.subject {
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.date {
+
+}
+
+.message-list {
+  max-width: 800px;
+  margin: 0 0 0 auto;
+  padding: 1rem 2rem
+}

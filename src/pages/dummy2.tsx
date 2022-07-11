@@ -9,23 +9,21 @@ const DummyPage: FC = () => {
   return (
     <PageLayout>
       <Head>
-        <title>Home - leboncoin</title>
+        <title>Another page - leboncoin</title>
         <meta name="description" content="Messages"></meta>
       </Head>
 
       <main className={styles.main}>
 
         <h1 className={styles.title}>
-          Here it is !
+          Ho !
         </h1>
 
         <p className={styles.description}>
-          This is my response to the leboncoin hiring test at<br />
-          <a title="leboncoin hiring frontend test" href="https://github.com/leboncoin/frontend-technical-test" target="_blank" rel="noopener noreferrer">https://github.com/leboncoin/frontend-technical-test</a>
-          <br /><br />
-
-          Please see the{' '}
-          <code className={styles.code}>README.md</code> for detailled explanations.
+          This is another dummy page to illustrate the behavior<br />of the new messaging feature accompanying you anywhere on leboncoin.
+        </p>
+        <p className={styles.description}>
+          Don&apos;t you noticed the new item in the header menu ?
         </p>
 
       </main>

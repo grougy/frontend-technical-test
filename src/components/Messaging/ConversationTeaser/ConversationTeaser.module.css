@@ -1,0 +1,36 @@
+.container {
+  background-color: #ffffff;
+  border: 1px solid #f2f2f2;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  max-width: 600px
+  ;
+}
+
+.container:hover {
+  background-color: #f8f8f8;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  background-color: #ddd;
+  border-radius: 100px;
+}
+
+.details {
+  margin-left: 2rem;
+}
+
+.interlocutor {
+  font-weight: bold;
+}
+
+.date {
+
+}

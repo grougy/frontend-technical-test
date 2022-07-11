@@ -2,6 +2,7 @@
   "/conversations/:id": "/conversations?senderId=:id",
   "/conversation/:id": "/conversations?id=:id",
   "/messages/:id": "/messages?conversationId=:id",
+  "/messages/:id/:lastts": "/messages?conversationId=:id&timestamp_gte=:lastts",
   "/message/:id": "/messages?id=:id",
   "/user/:id": "/users?id=:id"
 }
