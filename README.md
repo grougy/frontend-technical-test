@@ -4,9 +4,9 @@
 
 I first wondered if we should implement all the individual conversation pages as SSR rendered and cached pages ? I think the response is no, and it may be the trap of the exercise ?
 
-I choosed to benefit from this test by documenting and working on [https://redux-toolkit.js.org/](Redux Toolkit) I was not using yet with redux, and on [https://github.com/kirill-konshin/next-redux-wrapper](Next Redux Wrapper).
+I choosed to benefit from this test by documenting and working on [Redux Toolkit](https://redux-toolkit.js.org/) I was not using yet with redux, and on [Next Redux Wrapper](https://github.com/kirill-konshin/next-redux-wrapper).
 
-First effective dev on Next too, I come from [https://www.gatsbyjs.com/](Gastby). Next is a target and I would be really pleased to learn more of it.
+First effective dev on Next too, I come from [Gastby](https://www.gatsbyjs.com/). Next is a target and I would be really pleased to learn more of it.
 
 The result is a working messaging feature based on a Redux store where it is possible to post and receive messages in conversations, and to create new conversations. The whole redux store is initialized on the browser, so that the pages does not cache conversation specific data. It persists nicely across all pages (There are pitfalls when using Next & Redux !)
 
