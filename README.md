@@ -32,7 +32,7 @@ Please note I had to fix the middleware, it was relying on the db state at serve
 
 Build a microservice to expose a websocket and do realtime store update when new message, conversation or user are created. (avoid polling !)
 
-or use tools like [https://redux-toolkit.js.org/rtk-query/overview](RTK query) to abstract all the fetching layer.
+or use tools like [RTK query](https://redux-toolkit.js.org/rtk-query/overview) to abstract all the fetching layer.
 
 Will depend on the preference between big basic http traffik or ability to maintain many websocket connexions.
 
